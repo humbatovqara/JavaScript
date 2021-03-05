@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10 | Operators</title>
+</head>
+<body>
+    <div id="result"></div>
+    <div id="result1"></div>
+    <div id="result2"></div>
+    <div id="result3"></div>
+
+    <script>
+        // Operators
+        var x, y, z, sum, sub, multi, div, mod, a, b, c;
+
+        // Atama | Mənimsətmə
+        x = 70;
+        y = x;
+
+        // Addition | Toplama
+        a = 10;
+        b = 5;
+        sum = a + b;
+
+        // Subtraction | Çıxma
+        sub = a - b;
+
+        // Multiplication | Vurma
+        multi = a * b;
+
+        // Divison | Bölmə
+        div = a / b;
+
+        // Modules | Qalıq
+        mod = a % b;
+
+        // Increment | Artırma
+        z = x++;
+        c = ++b; 
+
+        // Decrement | Azaltma
+        z = x--;
+        c = --b;
+
+        document.getElementById("result").innerHTML = "z bərabərdir: " + z + "<br>" + "x bərabərdir: " + x;
+        document.getElementById("result1").innerHTML = "c bərabərdir: " + c + "<br>" + "b bərabərdir: " + b + "<br>" + "<br>";
+
+        // Assignment Operators | Mənimsətmə operatorları
+        // =
+        // +=
+        var q, t, e, r, u;
+        q = 20;
+        q += 12; // q = q + 12
+
+        // -=
+        t = 18;
+        t -= 3; // t = t - 3
+
+        // *=
+        e = 30;
+        e *= 3; // e = e * 3
+
+        // /=
+        r = 5;
+        r /= 2; // r = r / 2
+
+        // %=
+        u = 7;
+        u %= 3; // u = u % 3
+
+        document.getElementById("result2").innerHTML = u;
+
+
+        // + operatorunun toplamadan başqa sətr tipli verilənləri birləşdirmək xüsusiyyəti də vardır
+        var name, surname;
+        name = "Qara";
+        surname = "Humbatov";
+        document.getElementById("result3").innerHTML = name + " " + surname;
+
+    </script>
+</body>
+</html>
