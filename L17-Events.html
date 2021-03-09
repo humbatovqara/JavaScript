@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 17 | Events | Hadisələr</title>
+</head>
+
+<!-- Onload -->
+
+<body onload="message();">
+
+    <!-- On mouse over | On mouse out -->
+    <div id="result" style="width: 100%; height: 100px; border: 2px solid black;" onmouseover="message2();"
+        onmouseout="message3();">
+        On mouse over <br>
+        On mouse out
+    </div>
+
+    <!-- Onchange -->
+    <select name="" id="mySelect" onchange="change();">
+        <option>Javascript</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Php</option>
+    </select>
+
+    <!-- Onclick -->
+    <button type="button" onclick="klik();">Click</button>
+
+    <!-- Double Click -->
+    <button type="button" ondblclick="klik2();">Double Click</button>
+
+    <!-- On mouse down | On mouse up -->
+    <p id="result2" style="width: 100%; height: 100px; border: 2px solid black;" onmousedown="message4();"
+        onmouseup="message5();">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error ab recusandae ullam excepturi alias hic ducimus
+        aut molestiae ratione eos in neque, cumque cupiditate ad quia voluptas explicabo. Aliquam, debitis. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Quos, nam? Ducimus neque saepe, quis accusantium necessitatibus
+        minus natus? Voluptatibus quo ducimus quaerat temporibus. Totam maiores nobis quidem voluptas. Amet,
+        accusantium!
+    </p>
+
+    <!-- On mouse move -->
+    <p id="result3" onmousemove="mouseMove(event);" style="width: 300px; height: 100px; border: 1px solid black;"></p>
+    <div id="results"></div>
+
+    <!-- Onfocus & Onblur -->
+    <input type="text" name="" id="key" onfocus="Fokus();" onblur="Blur();">
+
+    <!-- Onkeydown & onKeyPress -->
+    <input type="text" name="" id="key1" onkeydown="KeyDown();" onkeypress="KeyPress();">
+
+    <!-- onSelect -->
+    <input type="text" name="" value="Javascript" id="key2" onselect="selected();">
+    
+
+    <script>
+        // Events
+        // Onload - səhifə yüklənəndə
+        function message() {
+            alert("Mən yükləndim");
+        }
+
+        // Onchange
+        function change() {
+            alert("Dəyişdi");
+        }
+
+        // Onclick
+        function klik() {
+            alert("Düymə klikləndi");
+        }
+
+        // Double Click
+        function klik2() {
+            alert("Düymə iki dəfə klikləndi");
+        }
+
+        // On mouse over
+        function message2() {
+            console.log("Siçan obyektin üzərindədir");
+        }
+
+        // On mouse out
+        function message3() {
+            console.log("Siçan obyektin kənarındadır");
+        }
+
+        // On mouse down
+        function message4() {
+            document.getElementById("result2").style.color = "red";
+        }
+
+        // On mouse up
+        function message5() {
+            document.getElementById("result2").style.color = "green";
+        }
+
+        // On mouse move
+        function mouseMove(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            document.getElementById("results").innerHTML = "koordinatlar x: " + x + " " + "koordinatlar y: " + y;
+        }
+
+        // onFocus & onBlur
+        function Fokus() {
+            document.getElementById("key").style.borderColor = "green";
+        }
+
+        function Blur() {
+            document.getElementById("key").style.borderColor = "red";
+        }
+
+        // onKeyDown & onKeyPress & onKeyUp
+        function KeyDown() {
+            alert("Klaviş sıxıldı");
+        }
+
+        function KeyPress() {
+            alert("Key Press aktivləşdi");
+        }
+
+        // onSelect
+        function selected() {
+            alert("Seçildi!");
+        }
+    </script>
+</body>
+
+</html>
