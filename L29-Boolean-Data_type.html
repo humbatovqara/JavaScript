@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 29 | Boolean Data Type</title>
+</head>
+<body>
+    <p id="result"></p>
+    <p id="result1"></p>
+    <hr>
+    <p id="result2"></p>
+    <hr>
+    <p id="result3"></p>
+    <hr>
+    <button type="button" onclick="verify()">Verify</button>
+
+    <script>
+        // Boolean Data Type - true / false
+        var x = true;
+        var y = false;
+        var a;  //undefined
+        var b = 7/"JS";     //NaN
+
+        function verify() {
+            document.getElementById('result').innerHTML = x + " " + y;
+            document.getElementById('result1').innerHTML = Boolean(7 > 61);
+
+            document.getElementById('result2').innerHTML = 
+            "Boolean(number,integer): " + Boolean(700) + "<br>" +
+            "Boolean(number,double): " + Boolean(3.14) + "<br>" +
+            "Boolean(number,negative): " + Boolean(-70) + "<br>" +
+            "Boolean(string): " + Boolean("JavaScript") + "<br>" +
+            "Boolean('boolean'): " + Boolean("true"); 
+
+            document.getElementById('result3').innerHTML = 
+            "Boolean(0): " + Boolean(0) + "<br>" +
+            "Boolean(0,negative): " + Boolean(-0) + "<br>" +
+            "Boolean(string): " + Boolean("") + "<br>" +
+            "Boolean(null): " + Boolean(null) + "<br>" +
+            "Boolean(false): " + Boolean(false) + "<br>" +
+            "Boolean(undefined): " + Boolean(a) + "<br>" +
+            "Boolean(NaN): " + Boolean(b);
+            
+            // Obyect qarşılaşdırıla bilməz - dəyərləri bilinmir
+        }
+    </script>
+</body>
+</html>

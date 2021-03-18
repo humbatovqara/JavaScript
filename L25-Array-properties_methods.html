@@ -34,14 +34,14 @@
         ];
 
         // Dəliklər, boşluqlar
-        // cars[10] = "Ford";
-        // var text,i;
-        // text = "";
-        // for(i=0;i<cars.length;i++) {
-        //     text += cars[i] + "<br>";
-        // }
+        cars[10] = "Ford";
+        var text,i;
+        text = "";
+        for(i=0;i<cars.length;i++) {
+            text += cars[i] + "<br>";
+        }
 
-        // document.getElementById("result").innerHTML = text;
+        document.getElementById("result").innerHTML = text;
 
 
         // JS-də "new Array()" istifadə etməyə ehtiyac yoxdur. Bunun yerinə "[]" istifadə daha doğrudur
@@ -61,9 +61,9 @@
         // document.getElementById("result2").innerHTML = cars instanceof Array;
         // document.getElementById("result3").innerHTML = isArray(cars);
 
-        // function isArray(isHave) {
-        //     return isHave.constructor.toString().indexOf("Array")>-1;
-        // }
+        function isArray(isHave) {
+            return isHave.constructor.toString().indexOf("Array")>-1;
+        }
 
 
 
