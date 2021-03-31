@@ -1,4 +1,4 @@
-alert("Xoşgəldin xarici javascript faylı");
+// alert("Xoşgəldin xarici javascript faylı");
 function Call() {
     alert("Məni hansı funksiya çağırdı?");
 }
@@ -9,4 +9,12 @@ function Goodbye() {
 
 function Welcome() {
     alert("Salam");
+}
+
+function goBack() {
+    window.history.back();
+}
+
+function goForward() {
+    window.history.forward();
 }
