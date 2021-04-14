@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 72 | Access to object with DOM</title>
+</head>
+<body>
+    
+    <div>
+        <p id="result"></p>
+        <p><a href="#" name="lang1">JavaScript</a></p>
+        <p><a href="#" name="lang2">JQuery</a></p>
+        <p><a href="#" name="lang3">Angular JS</a></p>
+        <p><a href="#" name="lang4">React JS</a></p>
+
+        <form id="frmDOM" name="frmDOM">
+            <div class="form-group">
+                <label for="txt1">Value 1</label>
+                <input type="text" name="txt1" id="txt1" value="Node">
+            </div>
+            <div class="form-group">
+                <label for="txt2">Value 2</label>
+                <input type="text" name="txt2" id="txt2" value="JS">
+            </div>
+        </form>
+
+        <button type="button" onclick="javascript:getDOM()">Click</button>
+
+        <div id="photo">
+            <img src="../../image/close-light.png" alt="1">
+            <img src="../../image/open-light.jpg" alt="2">
+        </div>
+    </div>
+
+    <script src="L72-Access-object-DOM.js"></script>
+</body>
+</html>
