@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 74 | Onclick event</title>
+</head>
+<body>
+    <div>
+        <p id="result"></p>
+
+        <!-- Onclick method 1 -->
+        <h2 onclick="this.innerHTML = 'Javascript'">Click</h2>
+
+        <!-- Onclick method 2 -->
+        <h2 onclick="javascript:changeText(this)">Click 2</h2>
+
+        <!-- Onclick method 3 -->
+        <button type="button" onclick="javascript:squareRoot()">Click 3</button>
+
+        <!-- Onclick method 4 -->
+        <button type="button" id="btn">Click 4</button>
+    </div>
+
+    <script src="L74-event-onclick.js"></script>
+</body>
+</html>

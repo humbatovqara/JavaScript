@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 75 | Events - onLoad, onUnLoad, onScroll</title>
+
+    <style>
+        #demo {
+            width: 200px;
+            height: 300px;
+            overflow: scroll;
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+
+<body onload="javascript:checkCookies()" onunload="myFunction()">
+    <h1 id="result1"></h1>
+    <div id="demo" onscroll="myFunction1()">
+        <h2 id="result"></h2>
+        
+        <h2>Test</h2>
+        <h2>Test</h2>
+        <h2>Test</h2>
+        <h2>Test</h2>
+        <h2>Test</h2>
+        <h2>Test</h2>
+        <h2>Test</h2>
+        <h2>Test</h2>
+        <h2>Test</h2>
+        <h2>Test</h2>
+    </div>
+
+    <script src="L75-onLoad-onScroll.js"></script>
+</body>
+
+</html>
