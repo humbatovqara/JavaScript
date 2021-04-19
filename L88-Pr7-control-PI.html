@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 88 - Project 7 | Personal ID number control</title>
+
+    <style>
+        #resultFalse {
+            background-color: red;
+            color: #fff;
+            padding: 16px;
+            font-size: 22px;
+        }
+
+        #resultTrue {
+            background-color: green;
+            color: #fff;
+            padding: 16px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <div>
+                <label for="sn">Serial number</label>
+                <div>
+                    <input type="text" id="sn" name="sn">
+                </div>
+                <button type="button" id="Btn">Control</button>
+            </div>
+            <p id="resultFalse" style="display: none"></p>
+            <p id="resultTrue" style="display: none"></p>
+        </form>
+    </div>
+
+    <script src="L88-Pr7-control-PI.js"></script>
+</body>
+</html>
